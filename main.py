@@ -16,6 +16,7 @@ def criarConta():
 def listarConta():
     for y in dic_contas.values():
         y.listaConta()
+
     
 def sacarValor():
     valor = float(input('informe o valo a ser sacado:'))
