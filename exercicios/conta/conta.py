@@ -1,7 +1,7 @@
 import datetime
 
 class Cliente:
-    
+
     def __init__(self, nome, sobre_nome, cpf):
         self.nome = nome
         self.sobre_nome = sobre_nome
@@ -14,14 +14,14 @@ class Cliente:
 
 class Historico:
     def __init__(self):
-        self.data = datetime.datetime.today
+        self.data = datetime.datetime.today()
         self.transacao =  []
 
     def add_transacao(self, t):
         self.transacao.append(t)
     
     def mostraHistorico(self):
-        print(f'data de abertura:{self.data} ')
+        print(f'data de abertura:{self.data}')
         print(f'trasação:')
         for i in self.transacao:
             print(f'-, {i}')
@@ -29,42 +29,70 @@ class Historico:
 class Conta:
 
     def __init__(self, numero, Cliente, saldo=0):
-        self.numero = numero
-        self.titular = Cliente
-        self.saldo = saldo
+        self.__numero = numero
+        self.__titular = Cliente
+        self.__saldo = saldo
         self.historico =  Historico()
-        
+
+    ## getter de saldo
+    @property    
+    def saldo(self):
+        return self.__saldo
+     
+    ## setter de saldo
+    @saldo.setter
+    def saldo(self, saldo):
+        self.__saldo = saldo
+
+        return self.__numero
+    
+    ## getter de numero
+    @property
+    def numero(self):
+        return self.__numero
+    
+    ## metodo setter do numero
+    @numero.setter
+    def numero(self,  numero):
+       self.__numero = numero
+       return self.__numero
+    
+    ## getter do titular
+    @property
+    def titular(self):
+        return self.__titular
+    
+    @titular.setter
+    def titular(self, titular):
+        self.__titular = titular
+        return self.__titular
     
     def listaConta(self):
         print(
-            f'\nNumero: {self.numero}\n'
-            f'Titular: {self.titular}\n'
-            f'Saldo: {self.saldo}\n')
+            f'\nNumero: {self.__numero}\n'
+            f'Titular: {self.__titular}\n'
+            f'Saldo: {self.__saldo}\n')
     
     def sacar_valor(self,num, valor):
-        if valor < self.saldo and num == self.numero:
-            self.saldo -= valor
-            self.historico.mostraHistorico()
-            self.historico.add_transacao(f'saque de {valor}')
+        if valor < self.__saldo and num == self.__numero:
+            self.__saldo -= valor
+ ##          self.__historico.mostraHistorico()
+            self.historico.mostraHistorico
             return True
         else:
             print('Impossivel sacar o valor')
             return False
     
     def deposita_valor(self,num, valor):
-        if num == self.numero:
-            self.saldo += valor
-            self.historico.mostraHistorico()
-            self.historico.add_transacao(f'deposito de {valor}')
+        if num == self.__numero:
+            self.__saldo += valor
+            self.historico.mostraHistorico
  
-        
-
     def transfere(self, destino, valor):
             self.sacar_valor(valor)
-            destino.saldo += valor
-            self.historico.mostraHistorico()
-            self.historico.add_transacao(f'transferencia de {valor}')
-            
+            destino.__saldo += valor
 
+            self.historico.mostraHistorico()
+            
     def __str__(self):
-        return f'Nome: {self.titular}'
+        return f'Nome: {self.__titular}'
