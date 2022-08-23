@@ -77,7 +77,7 @@ class Conta:
         if valor < self.__saldo and num == self.__numero:
             self.__saldo -= valor
  ##          self.__historico.mostraHistorico()
-            self.historico.mostraHistorico
+            self.historico.mostraHistorico()
             return True
         else:
             print('Impossivel sacar o valor')
@@ -86,7 +86,7 @@ class Conta:
     def deposita_valor(self,num, valor):
         if num == self.__numero:
             self.__saldo += valor
-            self.historico.mostraHistorico
+            self.historico.mostraHistorico()
  
     def transfere(self, destino, valor):
             self.sacar_valor(valor)
