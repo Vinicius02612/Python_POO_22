@@ -1,3 +1,5 @@
+# Lista de Exercicios
+
 ### Desafio,Mini sistema bancário
 
 Criar um mini sistema bancário usando os conceitos básicos de programação orientada a objetos
@@ -13,3 +15,9 @@ O sistema deve conter as seguintes opções:
     Aqui o usuaŕio deve ter o numero da conta e o valor a ser depositado na conta.<br>
 4 - Excluir uma conta:<br>
     O sistema deve excluir uma conta atravez do numero da conta;<br>
+
+
+## Lista 03 
+
+1. Crie uma classe para representar uma pessoa, com os atributos privados de nome, data de nascimento e altura.Crie os métodos públicos necessários para sets e gets e também um método para imprimir todos os dados de uma pessoa. Crie um método para calcular a idade da pessoa.
+
