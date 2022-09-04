@@ -49,9 +49,9 @@ while i >= 0:
     opc = int(input('Informe a opcao desejada '))
 
 
-    if opc == 1: ## criar conta
+    if opc == 1: 
         incializar()
-    if opc == 2: ## listar contas criadas
+    if opc == 2: 
         entrar()
     if opc == 3: 
         subir()

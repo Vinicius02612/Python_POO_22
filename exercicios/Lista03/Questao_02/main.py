@@ -28,8 +28,6 @@ def getAgenda():
     for i in dic_agenda.values():
         i.ImprimeAgenda()
 
-
-
 ## criando o menu
 i = 0
 while i >= 0:
@@ -41,14 +39,10 @@ while i >= 0:
     '4 - Imprimir Pessoas \n'
     '0 - Sair'
     )
-
     opc = int(input('Informe a opcao desejada '))
-
-
-    if opc == 1: ## criar conta
+    if opc == 1:
         ArmazenaPessoa()
-
-    if opc == 2: ## listar contas criadas
+    if opc == 2: 
         removePessoa()
     if opc == 3: 
         buscaPessoa()

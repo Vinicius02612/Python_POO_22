@@ -5,8 +5,6 @@
 
 class Televisao:
 
-
-    
     def __init__(self, volume, canal, status):
         self._volume = volume
         self._canal = canal

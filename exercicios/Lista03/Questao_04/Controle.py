@@ -1,4 +1,4 @@
-from Televisoa import Televisao
+from Python_POO_22.exercicios.Lista03.Questao_04.Televisao import Televisao
 
 
 class ControleRemoto:
