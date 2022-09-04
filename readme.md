@@ -21,3 +21,11 @@ O sistema deve conter as seguintes opções:
 
 1. Crie uma classe para representar uma pessoa, com os atributos privados de nome, data de nascimento e altura.Crie os métodos públicos necessários para sets e gets e também um método para imprimir todos os dados de uma pessoa. Crie um método para calcular a idade da pessoa.
 
+2. Crie uma classe Agenda que pode armazenar 10 pessoas (Classe com os atributos: nome, idade, altura) e que seja capaz de realizar as seguintes operações:
+   <ul>
+    a.armazenaPessoa; // Não permitir armazenar mais de 10 pessoas <br>
+    b.removePessoa; // Pelo nome <br>
+    c.buscaPessoa; // Busca pelo nome e imprime os dados da pessoa <br>
+    d.imprimeAgenda(); // imprime os dados de todas as pessoas da agenda
+   </ul>
+
