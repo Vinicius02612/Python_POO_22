@@ -1,12 +1,11 @@
 from Elevador import Elevador
 
-elevador = Elevador(0,0,0,0)
+elevador = Elevador()
 def incializar():
     auxCapacidade = int(input('Informe a capacidade do elevador:'))
     auxTotal = int(input('Informe o total de andares:'))
     elevador.inicializa(auxCapacidade, auxTotal)
     pass   
-
 
 def entrar():
     elevador.MostraElevador()
@@ -45,10 +44,7 @@ while i >= 0:
     '4 - Desce \n'
     '5 - Sair'
     )
-
     opc = int(input('Informe a opcao desejada '))
-
-
     if opc == 1: 
         incializar()
     if opc == 2: 

@@ -11,11 +11,11 @@ class Elevador:
 # get e setter do total de andares 
 # ==========================================  
     @property
-    def getTotal(self):
+    def tota_Andares(self):
         return self._total_Andares
     
 
-    @getTotal.setter
+    @tota_Andares.setter
     def setTotal(self, t):
         self._total_Andares = t
 # ==========================================
@@ -35,10 +35,10 @@ class Elevador:
 # get e setter da capacidade 
 # ==========================================
     @property
-    def getCapacidade(self):
+    def capacidade(self):
         return self._capacidade 
 
-    @getCapacidade.setter
+    @capacidade.setter
     def capacidade(self, c):
         self._capacidade = c 
 # ===========================================
@@ -46,10 +46,10 @@ class Elevador:
 # get e setter da quantidade de pessaos
 # ==========================================
     @property
-    def getPessoa(self):
+    def pessoa(self):
         return self._quant_pessoas
     
-    @getPessoa.setter
+    @pessoa.setter
     def setPessoa(self, p):
         self._quant_pessoas = p
 # ==============================================   

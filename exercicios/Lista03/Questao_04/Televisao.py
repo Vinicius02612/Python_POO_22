@@ -11,11 +11,11 @@ class Televisao:
         self._status = status
 
     @property
-    def getVolume(self):
+    def volume(self):
         return  self._volume
         
-    @getVolume.setter
-    def Setvolume(self, vol):
+    @volume.setter
+    def volume(self, vol):
         volMax = 100
         volMin = 0
         if vol < volMax and vol > volMin:
@@ -24,13 +24,12 @@ class Televisao:
         else:
             return False
 
-
     @property
-    def getCanal(self):
+    def canal(self):
         return self._canal
     
-    @getCanal.setter
-    def setCanal(self, canal):
+    @canal.setter
+    def canal(self, canal):
         maxCanal = 100
         minCanal = 1
         if canal  < maxCanal and canal > minCanal:
@@ -40,11 +39,11 @@ class Televisao:
             return False
     
     @property
-    def getStatus(self):
+    def status(self):
         return self._status
     
-    @getStatus.setter
-    def setStatus(self, status):
+    @status.setter
+    def dtatus(self, status):
         if status == 0:
             self._status = status
             print('Tv esta ligada!')

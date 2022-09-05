@@ -1,14 +1,32 @@
-from Python_POO_22.exercicios.Lista03.Questao_04.Televisao import Televisao
+
+
+
+from Televisao import Televisao
 
 
 class ControleRemoto:
 
-    def __init__(self) -> None:
-        self._tv = Televisao()
+ 
+    def __init__(self, televisao = Televisao()):
+        self.televisao = televisao
     
-    def aumentar_volume(self):
-        vol = int(input('informe em quanto vc quer aumentar:'))
-        self._tv.Setvolume(vol)
+
+    def DiminuiCanal(self):
+        self.televisao._canal += 1
+        print(f'Canal atual: {self.televisao._canal}')
+
+    def AumentaCanal(self):
+        self.televisao._canal -= 1
+        print(f'Canal: {self._televisao._canal}')
     
-    def diminuir_volume(self):
-        self._tv.Setvolume
+    def ReduzirVolume(self):
+        self.televisao._volume -= 1
+    
+    def AumentarVolume(self):
+        self.televisao._volume += 1
+    
+
+    def ProcuraCanal(self):
+        cnl = int(input('informe o canal que procura: '))
+        self.televisao._canal = cnl
+        print(f'Canal atual: {self.televisao._canal} ')
