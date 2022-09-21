@@ -181,9 +181,6 @@ if __name__ == '__main__':
     conta = Conta(456,'Vinicus',1500)
     """
 
-
-
-
     """
     4. Instancie uma ContaCorrente e uma ContaPoupanca e teste o código chamando o método
     atualiza() . 
